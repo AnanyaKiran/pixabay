@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Pixabay</title>
+</head>
+
+<body>
+    <div class="relative">
+        <div class="absolute inset-0 bg-[url('https://cdn.pixabay.com/index/2024/10/03/05-50-20-381_1440x550.jpg')] bg-cover filter brightness-50 bg-center w-full h-[450px] "></div>
+        <div class="relative z-10">
+            <div class=" text-white  flex justify-between items-center">
+                <!-- Left Side: Logo or Title -->
+                <img src="data:image/png;base64,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"
+                    alt="Logo" width="175px">
+
+                <!-- Right Side: Navigation Links -->
+                <nav class="flex text-m font-bold text-white mr-10 space-x-6">
+                    <a href="#"
+                        class=" rounded-full px-2 py-2  hover:bg-white hover:bg-opacity-40 transition-all duration-300">Explore      <i class="fa-solid fa-chevron-down text-white text-xs"></i></a>
+                    <a href="#"
+                        class="rounded-full px-4 py-2 hover:bg-white hover:bg-opacity-40 transition-all duration-300">Log
+                        In</a>
+                    <a href="#"
+                        class="rounded-full px-4 py-2 bg-slate-50 border-solid border-2 bg-opacity-20 hover:bg-white hover:bg-opacity-40 hover:bg-transition-all duration-300">Join</a>
+                    <button><a href="#"
+                            class="bg-green-600 rounded-full px-4 py-2 hover:bg-green-500 transition duration-300"><i
+                                class="fa-solid fa-upload text-white"></i>
+                            Upload</a></button>
+                </nav>
+            </div>
+
+            <p class="text-4xl text-white mt-20 text-center"><strong>Stunning royalty-free images & royalty-free
+                    stock</strong></p>
+            <p class="text-m mt-3 text-white text-center">Over 5 million+ high quality stock images, videos and music
+                shared by our talented community.</p>
+            <div class="p-4 mt-7 flex rounded-full bg-stone-100 w-1/2 justify-between mx-auto">
+
+                <!-- Left text: 'Search' -->
+                <span class="text-gray-700 "><i class="fa-solid fa-magnifying-glass text-gray-700"></i>    Search for all images on Pixabay</span>
+
+                <!-- Right text: 'All Images' -->
+                <span class="text-gray-700 ">All Images    <i class="fa-solid fa-chevron-down text-gray-700 text-xs"></i></span>
+            </div>
+            <div class="text-gray-200 text-xs flex w-5/6 justify-center justify-between mx-auto mt-20">
+                <span>Read more about the <strong><u>Content License</u></strong></span>
+                <span>Free image by <strong><u>yoshitaka2</u></strong></i></span>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
